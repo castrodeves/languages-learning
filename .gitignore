@@ -1,6 +1,8 @@
-
 .vscode/launch.json
 C/Ambiente.c
 C/*.c
 C/*.exe
 C/*.o
+
+# Dependency directories
+node_modules/

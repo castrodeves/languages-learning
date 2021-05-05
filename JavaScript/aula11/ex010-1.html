@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: darkslateblue;
+            color: white;
+            font: normal 18pt Arial;
+            text-align: center;
+        }
+
+        div{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Nacionalidade</h1>
+    <p>Em que país você mora? BR / EUA / PT / UE</p>
+    <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resp">
+        <p>Você é...</p>
+    </div>
+
+    <script>
+        function verificar(){
+            var tp = window.document.getElementById('txtp').value
+            var resp = window.document.getElementById('resp')
+
+            if (tp == `BR`) {
+                resp.innerHTML = `Você é Brasileiro`
+            } else {
+                resp.innerHTML = `Você é Estrangeiro`
+            }
+        }
+    </script>
+</body>
+</html>
