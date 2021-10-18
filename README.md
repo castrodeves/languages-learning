@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-<a name="top" href="https://github.com/eduardocastrodev/bootcamps"><img src="https://cdn-icons.flaticon.com/png/512/2822/premium/2822371.png?token=exp=1634522118~hmac=d47afbab776625fccf838fedc563648c" width="200px"></a>
+<a name="top" href="https://github.com/eduardocastrodev/languages-learning"><img src="./logo.png" width="200px"></a>
 <br>
 Aprendendo linguagens
 <br>
