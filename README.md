@@ -1,9 +1,40 @@
-# languages-learning
-My first steps repository
+<h1 align="center">
+<br>
+<a name="top" href="https://github.com/eduardocastrodev/bootcamps"><img src="https://cdn-icons.flaticon.com/png/512/2822/premium/2822371.png?token=exp=1634522118~hmac=d47afbab776625fccf838fedc563648c" width="200px"></a>
+<br>
+Aprendendo linguagens
+<br>
+</h1>
 
-Recently, other repositories have been created for each new language. 
-To differentiate from repositories with real projects, this will contain my initial steps in some languages.
+<h4 align="center">Repositório com passos iniciais do aprendizado de novas tecnologias</h4>
 
-(Português)
-Recentemente, outros repositórios foram criados para cada nova linguagem.
-Para diferenciar de repositórios com projetos reais, esse conterá minhas etapas iniciais em algumas linguagens.
+<p align="center">
+<b><a href="#introdução">Introdução</a></b>
+|
+<b><a href="#conteúdo">Stacks</a></b>
+|
+<b><a href="#créditos">Créditos</a></b>
+</p>
+
+## 🏃‍♂️ Introdução
+
+Anteriormente, outros repositórios eram criados para cada nova stack que estava aprendendo. Para diferenciar de repositórios com projetos reais, bootcamps e forks, esse repositório conterá minhas etapas iniciais em novas tecnologias.
+
+## 🚀 Stacks
+
+Alguns códigos foram feitos durante o começo da minha graduação.
+
+| Stack                     | Descrição                                     |
+| :------------------------ | :-------------------------------------------- |
+| [C/C++](C-C++/)           | Iniciação as linguagens C e C++               |
+| [Html5/Css3](HTML-CSS/)   | Iniciação as tecnologias web com Html e Css   |
+| [JavaScript](JavaScript/) | Interações em aplicações web com JavaScript   |
+| [Typescript](Typescript/) | Tipagem na web, lições iniciais de Typescript |
+
+## 📄 Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+
+<br>
+
+<p align="center">Desenvolvido por <a href="https://www.linkedin.com/in/eduardocastrodev/">Eduardo Castro</a></p>
