@@ -1,7 +1,10 @@
-void liberamapa();
-void alocamapa();
-void lemapa();
+#define CIMA 'w'
+#define BAIXO 's'
+#define DIREITA 'd'
+#define ESQUERDA 'a'
+
 int acabou();
-void imprimemapa();
 void move (char direcao);
-int main();
+int ehdirecao(char direcao);
+void fantasma();
+int praondeofantasmavai(int xatual, int yatual, int* xdestino, int* ydestino);
