@@ -1,7 +1,8 @@
-\docmentclass[a4paper, 12pt]{article}
+\documentclass[a4paper, 12pt]{article}
 \usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath, amsfonts, amssymb}
+\usepackage{multicol}
 \begin{document}
 
 \begin{center}
@@ -11,24 +12,138 @@
 \begin{enumerate}
 \item \textbf{Operações com Escalares}
 
-$\alpha(\beta A) = (\alpha \beta) A$
+\textbf{$\alpha(\beta A) = (\alpha \beta) A$ (Associativa)}
 
-$\alpha (A B) = (\alpha A) B = A (\alpha B)$
+Por definição de produto por escalar, multiplicamos um valor $\alpha$ por cada elemento $a_{ij}$ da matriz A. Considerando que $\alpha$ e todos esses elementos são números reais, tem-se que:
 
-$\alpha (A \pm B) = \alpha A \pm \alpha B$
+$$
+[\alpha(\beta A)]_{ij} 
+= \alpha [\beta A]_{ij}
+= (\alpha \beta)[A]_{ij}
+= [(\alpha \beta A)]_{ij}
+= \alpha (\beta A) = (\alpha \beta) A.
+$$ \\
 
-$(\alpha \pm \beta) A = \alpha A \pm \beta A$ \\
+
+\textbf{$\alpha (A B) = (\alpha A) B = A (\alpha B)$ (Associativa)} 
+
+Sejam $
+A=[a_{ij}]_{m \times p}, 
+B=[b_{ij}]_{p \times n}, 
+(\alpha A)B=[c_{ij}]_{m \times n}, 
+A (\alpha B)=[d_{ij}]_{m \times n}, 
+\alpha (AB)=[e_{ij}]_{m \times n}$ 
+e $\alpha \in \mathbb{R}$
+
+$$
+[c_{ij}] 
+= \sum\limits_{k=1}^{n}(\alpha \cdot a_{ik}) \cdot b_{kj}
+= \alpha \cdot \sum\limits_{k=1}^{n} a_{ik} \cdot b_{kj}
+= [e_{ij}]
+$$ \
+
+$$
+[d_{ij}] 
+= \sum\limits_{k=1}^{n}a_{ik} \cdot(\alpha \cdot b_{kj})
+= \alpha \cdot \sum\limits_{k=1}^{n} a_{ik} \cdot b_{kj}
+= [e_{ij}]
+$$
+
+então, isso implica dizer que $\alpha (A B) = (\alpha A) B = A (\alpha B)$. \\ \\
+
+
+\textbf{$\alpha (A \pm B) = \alpha A \pm \alpha B$ (Distributiva)}
+
+Sejam $[A]_ij, [B]_ij$ e $\alpha \in \mathbb{R}$, tem-se que:
+
+$$
+[\alpha (A + B)]_{ij} 
+= \alpha[A + B]_{ij}
+= \alpha([A]_{ij} + [B]_{ij}) $$ \ $$
+= \alpha [A]_{ij} + \alpha [B]_{ij}
+= [\alpha A]_{ij} + [\alpha B]_{ij}
+= [\alpha A + \alpha B]_{ij}.
+$$ \\
+
+
+\textbf{$(\alpha \pm \beta) A = \alpha A \pm \beta A$ (Distributiva)}
+
+Considerando que $\alpha$, $\beta$ e todos os elementos $[A]_{ij}$ são números reais, tem-se que:
+
+$$
+[(\alpha + \beta) A]_{ij}
+= (\alpha + \beta)[A]_{ij}
+= \alpha [A]_{ij} + \beta [A]_{ij} 
+= [ \alpha A]_{ij} + [\beta A]_{ij}
+= [ \alpha A + \beta A]_{ij}.
+$$ \\
+
 
 
 \item \textbf{Produto de Matrizes}
 
-$A + B = B + A$
+\textbf{$A + B = B + A$ (Comutativa)}
 
-$(A + B) + C = A + (B + C)$
+$A + B = [A]_{ij} + [B]_{ij} = [B]_{ij} + [A]_{ij} = B + A$. \\ \\
 
-$A(BC) = A(BC)$
 
-$(B + C) A = BA + CA$ \\
+\textbf{$(A + B) + C = A + (B + C)$ (Associativa)}
+
+$$
+(A + B) + C 
+= [A]_{ij} + ([B]_{ij} + [C]_{ij})
+= ([A]_{ij} + ([B]_{ij} + [C]_{ij})) $$ \ $$
+= (([A]_{ij} + [B]_{ij}) + [C]_{ij})
+= ([A]_{ij} + [B]_{ij}) + [C]_{ij}
+= A + (B + C).
+$$ \\
+
+
+\textbf{$A(BC) = A(BC)$ (Associativa)}
+
+Sejam A, B e C matrizes m x p, p x q e q x n respectivamente. Tem-se que:
+
+\begin{multicols}{2}
+\begin{flushright}
+$
+[c_{ij}]
+$
+\columnbreak
+\end{flushright}
+\begin{flushleft}
+$ = \sum\limits_{k=1}^{p} (AB)_{ik} \cdot c_{kj}$ \\
+$ = \sum\limits_{k=1}^{p} (\sum\limits_{l=1}^{n} a_{il} \cdot b_{lk}) \cdot c_{kj}$ \\
+$ = \sum\limits_{l=1}^{n} a_{il} \cdot (\sum\limits_{k=1}^{p} b_{lk} \cdot c_{kj})$ \\
+$ = \sum\limits_{l=1}^{n} a_{il} \cdot (BC)_{lj} = [e_{ij}]$. \\
+\end{flushleft}
+\end{multicols}
+
+\textbf{$(B + C)A = BA + CA$ (Distributiva)} \\
+
+Usando a definição de produto de matrizes, sejam
+$ A = [a_{ij}]_{m \times n}, $ 
+$ B = [b_{ij}]_{n \times p}, $ 
+$ C = [c_{ij}]_{n \times p}, $ 
+$ AB = [e_{ij}]_{m \times p}, $ 
+$ AC = [f_{ij}]_{m \times p}, $ 
+e $ A(B+C) = [d_{ij}]_{m \times p} $, pode-se dizer que: 
+
+\begin{multicols}{2}
+\begin{flushright}
+$
+[d_{ij}]
+$
+\columnbreak
+\end{flushright}
+\begin{flushleft}
+$ = \sum\limits_{k=1}^{n} (a_{ik} + b_{ik}) \cdot c_{kj}$ \\
+$ = \sum\limits_{k=1}^{n} (a_{ik} \cdot c_{kj} + b_{ik} \cdot c_{kj})$ \\
+$ = \sum\limits_{k=1}^{n} a_{ik} \cdot c_{kj} + \sum\limits_{k=1}^{n} b_{ik} \cdot c_{kj}$ \\
+$ = [e_{ij}] + [f_{ij}] $.
+
+\end{flushleft}
+\end{multicols}
+
 
 \end{enumerate}
-\end{document}u
+\end{document}
