@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #111827;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="225.0" style="-fx-background-color: #1f2937;">
+         <children>
+            <TextField fx:id="username" layoutX="38.0" layoutY="144.0" promptText="James Richard" style="-fx-background-color: #f0f0f0;" />
+            <PasswordField fx:id="userpassword" layoutX="38.0" layoutY="213.0" promptText="********" style="-fx-background-color: #f0f0f0;" />
+            <Button layoutX="38.0" layoutY="275.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #3b82f6;" text="Login" textFill="#f0f0f0" />
+            <Button layoutX="122.0" layoutY="275.0" mnemonicParsing="false" onAction="#register" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #f0f0f0;" text="Register" textFill="#1f2937" />
+            <Label layoutX="38.0" layoutY="122.0" text="Username" textFill="#f0f0f0" />
+            <Label layoutX="38.0" layoutY="191.0" text="Password" textFill="#f0f0f0" />
+         </children>
+      </Pane>
+   </children>
+</HBox>

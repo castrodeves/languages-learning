@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #111827;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.23618090452261306, 0.7537688442211056" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane style="-fx-background-color: #111827;" />
+          <AnchorPane style="-fx-background-color: #111827;">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="600.0" focusTraversable="true" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="155.0" AnchorPane.rightAnchor="155.0">
+                     <image>
+                        <Image url="@assets/welcome.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="116.0" prefWidth="598.0" style="-fx-background-color: #111827;" />
+        </items>
+      </SplitPane>
+   </children>
+</VBox>
