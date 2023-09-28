@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-<a name="top" href="https://github.com/eduardocastrodev/languages-learning"><img src="./logo.png" width="200px"></a>
+<a name="top" href="https://github.com/eduardocastrodev/languages-learning"><img src=".assets/logo.png" width="200px"></a>
 <br>
 Aprendendo linguagens
 <br>
@@ -26,10 +26,10 @@ Alguns códigos foram feitos durante o começo da minha graduação.
 
 | Stack                     | Descrição                                     |
 | :------------------------ | :-------------------------------------------- |
-| [C/C++](C-C++/)           | Iniciação as linguagens C e C++               |
-| [Html5/Css3](HTML-CSS/)   | Iniciação as tecnologias web com Html e Css   |
-| [JavaScript](JavaScript/) | Interações em aplicações web com JavaScript   |
-| [Typescript](Typescript/) | Tipagem na web, lições iniciais de Typescript |
+| [C/C++](Languages/C-C++/)           | Iniciação as linguagens C e C++               |
+| [Html5/Css3](Languages/HTML-CSS/)   | Iniciação as tecnologias web com Html e Css   |
+| [JavaScript](Languages/JavaScript/) | Interações em aplicações web com JavaScript   |
+| [Typescript](Languages/Typescript/) | Tipagem na web, lições iniciais de Typescript |
 
 ## 📄 Licença
 
@@ -37,4 +37,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 <br>
 
-<p align="center">Desenvolvido por <a href="https://www.linkedin.com/in/eduardocastrodev/">Eduardo Castro</a></p>
+<p align="center">Desenvolvido por <a href="https://www.linkedin.com/in/castrodeves/">Eduardo Castro</a></p>
