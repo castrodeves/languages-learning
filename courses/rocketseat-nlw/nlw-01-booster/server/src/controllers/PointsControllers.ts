@@ -50,7 +50,7 @@ class PointsControllers {
 
     await knex("points").insert(point);
 
-    items.map(async (item: string) => {
+    items.filter(async (item: string) => {
       let hasItem = await knex("items").where({ id: item }).first();
 
       if (hasItem)
@@ -58,7 +58,6 @@ class PointsControllers {
           item_id: item,
           point_id,
         });
-      else return;
     });
 
     return response.status(201).json(point);
